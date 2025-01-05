@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightgrey;
+    font-size: large;
+}
+
+h1 {
+    margin: 50px 0 25px 25px;
+    flex: none;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.recipe {
+    width: 450px;
+    padding: 25px;
+    line-height: 1.9;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #3f3f3f;
+    color: white;
+    padding: 0 20px;
+    border-radius: 0 0 0 5px;
+    font-size: 110%;
+}
+
+h2 {
+    margin: 5px 0;
+    color: #418082;
+}
+
+.fa-clock {
+    margin-right: 5px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.ingredients {
+    display: flex;
+    gap: 10px;
+}
+
+.oneIngredient {
+    background: #418082;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    line-height: 1.1;
+}
+
+
+
+@media screen and (max-width: 941px) {
+    
+    .ingredients {
+        display: block;
+    }
+
+    .oneIngredient {
+        margin-bottom: 5px;
+    }
+}
